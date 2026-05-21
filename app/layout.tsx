@@ -29,18 +29,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-black text-white">
-        
+
         <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
           <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
-            
+
             <Link
               href="/"
-              className="text-xl font-black tracking-widest text-cyan-400"
+              className="text-xl font-black tracking-widest text-cyan-400 transition hover:text-cyan-300"
             >
               GAMEMOOD
             </Link>
 
             <div className="flex gap-4">
+
               <Link
                 href="/"
                 className="rounded-xl px-4 py-2 transition hover:bg-white/10"
@@ -49,11 +50,12 @@ export default function RootLayout({
               </Link>
 
               <Link
-                href="/mood"
+                href="/library"
                 className="rounded-xl px-4 py-2 transition hover:bg-white/10"
               >
-                Mood Scanner
+                Library
               </Link>
+
             </div>
           </div>
         </nav>
